@@ -1,0 +1,101 @@
+.container {
+    background-color: lightgray;
+    display: flex;
+    height: 100%;
+    /*flex-direction: row;*/
+    /*row ,columne */
+    /*justify-content: flex-start;*/
+    align-items: center;
+    /*flex-start,flex-end,center,space-around,space-between,space evenly*/
+}
+
+
+/*
+To set the position of specifice flex item
+.home {
+    margin-right: auto;
+}*/
+
+
+/* Flex Proprty */
+
+
+/*
+.container>div {
+    /* set flex1 proprty to all flex items 
+    flex: 1;
+}*/
+
+
+/*
+.container>.home {
+    flex: 1;
+    background-color: beige;
+}*/
+
+
+/* only that div will be growing and shrinking */
+
+
+/*
+.container>.contact {
+    
+    flex: 1;
+    background-color: aqua;
+}*/
+
+
+/* To move the item in botom-left corner */
+
+.home {
+    align-self: flex-end;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home2 {
+    background-color: aqua;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    order: 1;
+}
+
+.about2 {
+    background-color: burlywood;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    order: 0;
+}
+
+.contact2 {
+    background-color: cadetblue;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
+    order: -1;
+}
+
+.container3 {
+    border: 5px solid black;
+    display: flex;
+}
+
+.search {
+    flex: 1;
+    background-color: aqua;
+}
+
+@media all and(max-width:600px) {
+    .container3 {
+        flex-wrap: wrap;
+    }
+    .container3>div {
+        flex: 1 1 20%;
+    }
+}
